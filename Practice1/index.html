@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Log in and Regestration form </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="login-page">
+          <div class= "form">
+              <form class="register-form">
+                  <input type= "text" placeholder="user name" />
+                  <input type= "password" placeholder="password" />
+                  <input type= "text" placeholder="email id" />
+                  <button> Create </button>
+                  <p class= "message"> Already Regitered? <a href="#">Login </a>
+                  </p>
+              </form>
+        <form class="login-form">
+
+                <form name="f1" action = "connection.php" onsubmit = "return validation()" method = "POST"> 
+
+                    <p>  
+                        <label> UserName: </label>  
+                        <input type = "text" id ="user" name  = "user" />  
+                    </p>  
+                    <p>  
+                        <label> Password: </label>  
+                        <input type = "password" id ="pass" name  = "pass" />  
+                    </p>  
+                    <p>     
+                        <input type =  "submit" id = "btn" value = "Login" />  
+                    </p> 
+
+                    <p class="message">Not Registered? <a href="#"> Register </a> </p>
+                </form>  
+
+
+            
+
+        </form>
+    </div>
+    <script src= 'https://code.jquery.com/jquery-3.6.0.min.js'></script>
+
+     
+        <script>
+            $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity:"toggle"},"slow");
+            });
+            </script>
+
+           
+</div>
+
+           
+    </body>
+</html>

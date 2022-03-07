@@ -1,0 +1,2 @@
+define(['jquery','internal/sitebuilder/common/ModuleClassLoader'],function($,ModuleClassLoader){var module={},extend={};extend.styles={"default":{"global":{"css":"view.less"},"slug":"default"}};if(!extend.styles['default']['global']){extend.styles['default']['global']={};}
+extend.styles['default']['global']['js']=null;extend.defaultStyle=extend.styles['default'];return ModuleClassLoader.register('button',module,extend);});

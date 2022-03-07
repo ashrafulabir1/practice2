@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Abir's Dream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="moshkora1.jpg" alt="logo" />
+                
+                
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href=home.html>HOME</a></li>
+                    <li><a href=dream.html>ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" value="" id="search" onchange="openPage()" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Abir's blogg & <br><span>Life Style</span> <br>Website</h1>
+            <p class="par">Sample Website <br> For learning purpose.
+                <br> </p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+                <div class="login-page">
+                <div class="form">
+                    <form class="login-form">
+                        
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                   
+                    <p class="message">Sign up <a href="#"> Register </a> </p>
+
+
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                       
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                </form>
+
+                    <form class="register-form">
+                        <h2>Regestration Here</h2>
+                        <form action="connect.php" method="POST">
+                        <input type="name" name="name" placeholder="User Name" name="name" required>
+                        <input type="password" name="password" placeholder="Password" password="password" required>
+                        <input type="email" name="email" placeholder="Enter email id" email="email" required>
+                        
+                        <input type="Submit" value= "Submit">
+                        <p class= "message"> Already Regitered? <a href="#">Login </a>
+                        </p>
+                    </form>
+                </div>
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script  src= 'https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity:"toggle"},"slow");
+        });
+        </script>
+        
+        <script>
+            function openPage() {
+                var x = document.getElementById("search").value;
+    
+                if (x === "ABOUT") {
+                    window.open("dream.html");
+                }
+    
+                else if (x === "HOME") {
+                    window.open("home.html");
+            
+                }
+                else {
+                    window.alert("Nothing found!!");
+                }
+            }
+            
+        </script>
+</html>
